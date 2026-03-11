@@ -4,7 +4,7 @@ description = "AES-GCM support for nordic chips using the aead crate primitives"
 license-file = "LICENSE"
 documentation = "https://docs.rs/nrf-aes-gcm"
 repository = "https://github.com/localcc/nrf-aes-gcm"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 
 [dependencies]
