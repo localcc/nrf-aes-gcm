@@ -1,5 +1,9 @@
 [package]
 name = "nrf-aes-gcm"
+description = "AES-GCM support for nordic chips using the aead crate primitives"
+license-file = "LICENSE"
+documentation = "https://docs.rs/nrf-aes-gcm"
+repository = "https://github.com/localcc/nrf-aes-gcm"
 version = "0.1.0"
 edition = "2024"
 
@@ -9,6 +13,7 @@ nrfxlib-sys = "3.0.3"
 zeroize = { version = "1.8.2", default-features = false, features = ["derive"] }
 
 [features]
+default = [ "nrf9160" ]
 nrf9160 = [ "nrfxlib-sys/nrf9160" ]
 nrf9151 = [ "nrfxlib-sys/nrf9151" ]
 nrf9120 = [ "nrfxlib-sys/nrf9120" ]
