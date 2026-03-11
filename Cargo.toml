@@ -1,0 +1,15 @@
+[package]
+name = "nrf-aes-gcm"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aead = "0.5.2"
+nrfxlib-sys = "3.0.3"
+zeroize = { version = "1.8.2", default-features = false, features = ["derive"] }
+
+[features]
+nrf9160 = [ "nrfxlib-sys/nrf9160" ]
+nrf9151 = [ "nrfxlib-sys/nrf9151" ]
+nrf9120 = [ "nrfxlib-sys/nrf9120" ]
+nrf9161 = [ "nrfxlib-sys/nrf9161" ]
